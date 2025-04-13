@@ -1,11 +1,28 @@
-set number    "Sets number on the left
-set autoindent   "Sets auto indent
+" Line numbers
+set number
+
+" Enable syntax highlighting
+syntax on
+
+" Show matching brackets
+set showmatch
+
+" Enable mouse support
 set mouse=a
-filetype indent on  "Sets auto indent depending on file type
-syntax on  "Colorizes the syntax
 
-" Map F3 to select entire buffer and reformat
-nnoremap <F3> :%norm! ggVG=<CR>
+" Enable line wrapping
+set wrap
 
-" Map a key to run TrailerTrash
-nnoremap <F4> :TrailerTrim<CR>
+" Set encoding
+set encoding=utf-8
+
+" Highlight search matches
+set hlsearch
+set incsearch
+
+" Case-insensitive search (unless capital letter used)
+set ignorecase
+set smartcase
+
+" Show line and column in the status line
+set ruler
